@@ -1,0 +1,148 @@
+.selection {
+    height: 700px;
+    background-color: #f8faff;
+    padding-top: 50px;
+    .container {
+        display: flex;
+        .selection-content {
+            flex: 4;
+            .title {
+                font-size: 36px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 60px;
+                line-height: 45px;
+            }
+            .content {
+                width: 323px;
+                line-height: 1.6;
+                margin-top: 30px;
+            }
+        }
+        .list-box {
+            flex: 6;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .colum {
+                display: flex;
+                flex-direction: column;
+                gap: 20px 0;
+                width: 280px;
+                .box-select {
+                    height: 215px;
+                    width: 280px;
+                    box-shadow: 4px 6px 20px rgba(144, 81, 252, 0.25);
+                    border-radius: 10px;
+                    position: relative;
+                    overflow: hidden;
+                    background: white;
+                    .title {
+                        p {
+                            position: absolute;
+                            right: 30px;
+                            top: 20px;
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+                        img {
+                            position: absolute;
+                            bottom: -3px;
+                            left: 5px;
+                        }
+                        .money {
+                        }
+                    }
+                    .content {
+                        position: relative;
+                        z-index: 10;
+                        color: white;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: inherit;
+                        opacity: 0;
+                        transform: translateY(40px);
+                        padding: 25px;
+                        background: linear-gradient(
+                            196.91deg,
+                            #3cb9ff 0.78%,
+                            #b623fb 143.56%
+                        );
+                        transition: 0.4s;
+                        .content-title {
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+                        .content-content {
+                            margin-top: 20px;
+                            line-height: 1.5;
+                        }
+                        p {
+                            text-transform: uppercase;
+                            margin-top: 20px;
+                            cursor: pointer;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                        &:hover {
+                            opacity: 0.9;
+                            transform: translateY(0);
+                            & ~ .title {
+                                p {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        height: 227px;
+                        .title {
+                            p {
+                                left: 20px;
+                                width: 100px;
+                            }
+                            img {
+                                left: 80px;
+                                bottom: -7px;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    .box-select {
+                        &:first-child {
+                            height: 290px;
+                            .content {
+                                .content-title {
+                                    width: 150px;
+                                }
+                            }
+                            .title {
+                                p {
+                                    width: 150px;
+                                    left: 20px;
+                                }
+                            }
+                        }
+                        &:last-child {
+                            .content {
+                                .content-title {
+                                    width: 100%;
+                                    text-align: center;
+                                    left: 0;
+                                }
+                            }
+                            .title {
+                                p {
+                                    width: 100%;
+                                    text-align: center;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

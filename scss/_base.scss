@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $font-sans;
+    font-size: 16px;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: $font-sans;
+}
+
+input {
+    line-height: normal;
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+button {
+    background: $gradient;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}

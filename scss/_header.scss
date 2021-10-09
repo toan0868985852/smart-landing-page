@@ -1,0 +1,40 @@
+header {
+    background-color: white;
+    height: 65px;
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            width: 225px;
+            display: flex;
+            align-items: center;
+            &-background {
+                width: 40px;
+                height: 40px;
+                background: $gradient;
+                @include display-center;
+                border-radius: 5px;
+            }
+            p {
+                font-size: 20px;
+                font-weight: 560px;
+                margin-left: 5px;
+                margin-right: 3px;
+            }
+        }
+        nav {
+            a {
+                color: black;
+                padding: 5px;
+                font-size: 14px;
+            }
+        }
+        button {
+            width: 136px;
+            height: 34px;
+            padding: 10px 0;
+        }
+    }
+}

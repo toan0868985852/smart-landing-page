@@ -1,0 +1,67 @@
+.work {
+    background-color: #f8faff;
+    height: 750px;
+    .wrapper {
+        position: relative;
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            .work-img {
+                position: absolute;
+                left: 0;
+            }
+            .work-content {
+                margin-top: 20px;
+                .title {
+                    font-weight: 700;
+                    font-size: 43px;
+                    margin-bottom: -20px;
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        margin-top: 55px;
+                        .content {
+                            display: flex;
+                            text-transform: uppercase;
+                            .number-second {
+                                font-size: 80px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                background: $gradient;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                line-height: 1;
+                            }
+                            .content-work {
+                                display: flex;
+                                flex-direction: column;
+                                margin-top: 10px;
+                                margin-left: 15px;
+                                .second {
+                                    font-weight: 700;
+                                    background: $gradient;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    margin-bottom: 5px;
+                                }
+                                .system {
+                                    width: 150px;
+                                    font-weight: 500;
+                                }
+                                .create {
+                                    width: 200px;
+                                    font-weight: 500;
+                                }
+                                .create-content {
+                                    width: 250px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

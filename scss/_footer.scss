@@ -1,0 +1,72 @@
+.footer {
+    min-height: 400px;
+    background: #1a293e;
+    color: white;
+    .container {
+        display: flex;
+        .contact {
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+            background: #1a293e;
+            border-right: 3px solid gray;
+            margin-top: 90px;
+            img {
+                width: 245px;
+            }
+            .content {
+                width: 420px;
+                margin-top: 40px;
+                line-height: 1.5;
+            }
+        }
+        .production {
+            margin-top: 90px;
+            height: 200px;
+            flex: 6;
+            display: flex;
+            .product {
+                margin-left: 70px;
+                ul {
+                    list-style: none;
+                    margin-top: 30px;
+                    li {
+                        margin-bottom: 9px;
+                    }
+                }
+            }
+            .contact-content {
+                margin-left: 70px;
+                p {
+                    margin-top: 30px;
+                }
+                ul {
+                    margin-top: 10px;
+                    list-style: none;
+                    li {
+                        color: gray;
+                    }
+                }
+            }
+            .social {
+                margin-left: 70px;
+                .facebook {
+                    width: 47px;
+                    height: 47px;
+                    border-radius: 50%;
+                    background: #576ea5;
+                    @include display-center;
+                    margin-top: 28px;
+                }
+                .youtube {
+                    width: 47px;
+                    height: 47px;
+                    border-radius: 50%;
+                    background: #df2f2f;
+                    @include display-center;
+                    margin-top: 28px;
+                }
+            }
+        }
+    }
+}
